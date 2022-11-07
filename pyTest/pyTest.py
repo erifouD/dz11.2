@@ -1,7 +1,10 @@
-print("x y z w")
-for x in range(0, 2):
-    for y in range(0, 2):
-        for z in range(0, 2):
-            for w in range(0, 2):
-                if not((x and not y) or (y == z) or (not w)):
-                    print(x, y, z, w)
+n = int(input())
+if n < 4:
+    print("0")
+else:
+    if n % 2 == 0:
+        print(n - 2, "\n", int(n / 2), " ", int(n / 2 + 2))
+    else:
+        print(n - 3)
+    for i in range (n - 3):
+        print(1, " ", i + 3)
